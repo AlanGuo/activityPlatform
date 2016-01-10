@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="webapp">
+  <meta name="author" content="alan">
+  
+  <title>WebApp</title>
+  
+  <!--for vendor style-->
+  <!-- build:css(app) style/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!--for main style-->
+  <!-- build:css({tmp,app,.}) style/main.css -->
+  <link rel="stylesheet" href="style/main.css">
+  <!-- endbuild -->
+  <!-- build:css({tmp,app}) style/ie8.css -->
+  <!--[if LTE IE 8]>
+  <link rel="stylesheet" href="style/ie8.css">
+  <![endif]-->
+  <!-- endbuild -->
+</head>
+
+
+
+<body>
+
+    <script type="text/javascript">
+    window.startTime = +new Date();
+    </script>
+    <!-- Add your site or application content here -->
+    <div class="wrapper-all" id="wrapper-all">
+      <!--loading start-->
+      <style type="text/css">
+        /* --------------- loading --------------- */
+        /*load 1*/
+        @keyframes load{
+          0%{background: #ddd;transform:scale(0);}
+          50%{background: #666;transform:scale(1);}
+          100%{background: #ddd;transform:scale(0);}
+        }
+        @-webkit-keyframes load{
+          0%{background: #ddd;-webkit-transform:scale(0);}
+          50%{background: #666;-webkit-transform:scale(1);}
+          100%{background: #ddd;-webkit-transform:scale(0);}
+        }
+        @-moz-keyframes load{
+          0%{background: #ddd;-moz-transform:scale(0);}
+          50%{background: #666;-moz-transform:scale(1);}
+          100%{background: #ddd;-moz-transform:scale(0);}
+        }
+        @-ms-keyframes load{
+          0%{background: #ddd;-ms-transform:scale(0);}
+          50%{background: #666;-ms-transform:scale(1);}
+          100%{background: #ddd;-ms-transform:scale(0);}
+        }
+        /*load 2*/
+        @keyframes loadb{
+          0%{background: #ddd;transform:scale(0);}
+          12%{background: #ddd;transform:scale(0);}
+          62%{background: #666;transform:scale(1);}
+          100%{background: #ddd;transform:scale(0);}
+        }
+        @-webkit-keyframes loadb{
+          0%{background: #ddd;-webkit-transform:scale(0);}
+          12%{background: #ddd;-webkit-transform:scale(0);}
+          62%{background: #666;-webkit-transform:scale(1);}
+          100%{background: #ddd;-webkit-transform:scale(0);}
+        }
+        @-moz-keyframes loadb{
+          0%{background: #ddd;-moz-transform:scale(0);}
+          12%{background: #ddd;-moz-transform:scale(0);}
+          62%{background: #666;-moz-transform:scale(1);}
+          100%{background: #ddd;-moz-transform:scale(0);}
+        }
+        @-ms-keyframes loadb{
+          0%{background: #ddd;-ms-transform:scale(0);}
+          12%{background: #ddd;-ms-transform:scale(0);}
+          62%{background: #666;-ms-transform:scale(1);}
+          100%{background: #ddd;-ms-transform:scale(0);}
+        }
+
+        /*load 3*/
+        @keyframes loadc{
+          0%{background: #ddd;transform:scale(0);}
+          25%{background: #ddd;transform:scale(0);}
+          75%{background: #666;transform:scale(1);}
+          100%{background: #ddd;transform:scale(0);}
+        }
+        @-webkit-keyframes loadc{
+          0%{background: #ddd;-webkit-transform:scale(0);}
+          25%{background: #ddd;-webkit-transform:scale(0);}
+          75%{background: #666;-webkit-transform:scale(1);}
+          100%{background: #ddd;-webkit-transform:scale(0);}
+        }
+        @-moz-keyframes loadc{
+          0%{background: #ddd;-moz-transform:scale(0);}
+          25%{background: #ddd;-moz-transform:scale(0);}
+          75%{background: #666;-moz-transform:scale(1);}
+          100%{background: #ddd;-moz-transform:scale(0);}
+        }
+        @-ms-keyframes loadc{
+          0%{background: #ddd;-ms-transform:scale(0);}
+          25%{background: #ddd;-ms-transform:scale(0);}
+          75%{background: #666;-ms-transform:scale(1);}
+          100%{background: #ddd;-ms-transform:scale(0);}
+        }
+
+        /*load 4*/
+        @keyframes loadd{
+          0%{background: #ddd;transform:scale(0);}
+          37%{background: #ddd;transform:scale(0);}
+          87%{background: #666;transform:scale(1);}
+          100%{background: #ddd;transform:scale(0);}
+        }
+        @-webkit-keyframes loadd{
+          0%{background: #ddd;-webkit-transform:scale(0);}
+          37%{background: #ddd;-webkit-transform:scale(0);}
+          87%{background: #666;-webkit-transform:scale(1);}
+          100%{background: #ddd;-webkit-transform:scale(0);}
+        }
+        @-moz-keyframes loadd{
+          0%{background: #ddd;-moz-transform:scale(0);}
+          37%{background: #ddd;-moz-transform:scale(0);}
+          87%{background: #666;-moz-transform:scale(1);}
+          100%{background: #ddd;-moz-transform:scale(0);}
+        }
+        @-ms-keyframes loadd{
+          0%{background: #ddd;-ms-transform:scale(0);}
+          37%{background: #ddd;-ms-transform:scale(0);}
+          87%{background: #666;-ms-transform:scale(1);}
+          100%{background: #ddd;-ms-transform:scale(0);}
+        }
+        .wrap-loading .load-1{animation:load 1s ease infinite;-webkit-animation:load 1s ease infinite;-moz-animation:load 1s ease infinite;-ms-animation:load 1s ease infinite;}
+        .wrap-loading .load-2{animation:loadb 1s ease infinite;-webkit-animation:loadb 1s ease infinite;-moz-animation:loadb 1s ease infinite;-ms-animation:loadb 1s ease infinite;}
+
+        .wrap-loading .load-3{animation:loadc 1s ease infinite;-webkit-animation:loadc 1s ease infinite;-moz-animation:loadc 1s ease infinite;-ms-animation:loadc 1s ease infinite;}
+
+        .wrap-loading .load-4{animation:loadd 1s ease infinite;-webkit-animation:loadd 1s ease infinite;-moz-animation:loadd 1s ease infinite;-ms-animation:loadd 1s ease infinite;}
+        .wrap-loading{padding:2rem 0 2rem 0;text-align: center;}
+        .wrap-loading span{display: inline-block;width:.83rem;height:.83rem;border-radius: 50%;}
+      </style>
+      <div class="wrap-loading" id="page-loader" style="margin-top:30%;">
+        <p>
+          <span class="load-1"></span>
+          <span class="load-2"></span>
+          <span class="load-3"></span>
+          <span class="load-4"></span>
+        </p>
+      </div>
+      <!--loading end-->
+      <div class="header">
+        
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#/">Home</a></li>
+          <li><a href="#/about">About</a></li>
+          <li><a href="#/contact">Contact</a></li>
+        </ul>
+        
+        <h3 class="text-muted">WebApp</h3>
+      </div>
+
+      <div class="body">
+        <div class="tc">
+          <img src="image/yeoman.png">
+        </div>
+        <div id="body-container">
+        </div>
+      </div>
+
+      <div class="footer">
+        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+      </div>
+    </div>
+   
+    <!-- build:js({tmp,app}) script/vendors.js -->
+    
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!--主程序脚本-->
+    
+    
+    <script>
+    /*change id with your own*/
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?a2ede337a0b21b2991bd02c69befdc07";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    
+    
+    
+    
+    <!--{{localstorage-remove-start}}-->
+    <!-- build:js({tmp,app}) script/app.combo.js -->
+    <script type="text/javascript" src="script/app.js"></script>
+    <script type="text/javascript" src="script/event.js"></script>
+    <script type="text/javascript" src="script/router.js"></script>
+    <script type="text/javascript" src="script/home.js"></script>
+    <script type="text/javascript" src="script/about.js"></script>
+    <script type="text/javascript" src="script/contact.js"></script>
+    <script type="text/javascript" src="script/entry.js"></script>
+    <!-- endbuild -->
+    <!--{{localstorage-remove-end}}-->
+    <script type="text/javascript">
+      document.getElementById('page-loader').parentNode.removeChild(document.getElementById('page-loader'));
+      /*{{localstorage}}*/
+    </script>
+    
+    
+</body>
+</html>
